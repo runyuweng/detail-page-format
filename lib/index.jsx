@@ -1,19 +1,14 @@
-// const data = [
-//   {
-//     disabled: true,
-//     label: 'xxx',
-//     id: 'xxx',
-//     layout: {
-//       labelCol: 10,
-//       contentCol: 10
-//     },
-//     render: (d, t, i) => {<h1>d</h1>}
-//   }
-// ]
 
 import './index.scss';
 
-export default (dataStrcut, rawData) => {
+/**
+ * Return react elements.
+ *
+ * @param {Array} dataStrcut You can format the data by dataStrcut.
+ * @param {Object} data The original data.
+ */
+
+export default (dataStrcut, data) => {
   if (Object.prototype.toString.call(dataStrcut) !== '[object Array]') {
     console.error('Array is needed');
     return
@@ -37,8 +32,8 @@ export default (dataStrcut, rawData) => {
         }
         {
           d.render
-          ? d.render(rawData[d.id], rawData, i)
-          : <div className={`.col-${contentCol}`}>{rawData[d.id]}</div>
+          ? d.render(data[d.id], data, i)
+          : <div className={`.col-${contentCol}`}>{data[d.id]}</div>
         }
       </div>）
     })}
