@@ -1,0 +1,19 @@
+{
+  "name": "detail-page-format",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wengwengweng/detail-page-format.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wengwengweng/detail-page-format/issues"
+  },
+  "homepage": "https://github.com/wengwengweng/detail-page-format#readme"
+}
