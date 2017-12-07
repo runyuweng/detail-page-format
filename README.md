@@ -1,4 +1,4 @@
-# DETAIL-PAGE-FORMAT
+# DETAIL-PAGE-CREATE
 
 ## Getting Started
 
