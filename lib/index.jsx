@@ -1,5 +1,6 @@
 
-import './index.scss';
+import React from 'react'
+import './index.css';
 
 /**
  * Return react elements.
@@ -8,7 +9,8 @@ import './index.scss';
  * @param {Object} data The original data.
  */
 
-export default (dataStrcut, data) => {
+export default (props) => {
+  const {dataStrcut, data} = props;
   if (Object.prototype.toString.call(dataStrcut) !== '[object Array]') {
     console.error('Array is needed');
     return
@@ -24,7 +26,7 @@ export default (dataStrcut, data) => {
         contentCol = 6
       } = (d.layout || {})
 
-      return （<div key={d.id}>
+      return (<div key={d.id}>
         {
           d.label
           ? <div className={`.col-${labelCol}`}>{d.label}</div>
@@ -35,7 +37,7 @@ export default (dataStrcut, data) => {
           ? d.render(data[d.id], data, i)
           : <div className={`.col-${contentCol}`}>{data[d.id]}</div>
         }
-      </div>）
+      </div>)
     })}
   </div>)
 }

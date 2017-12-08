@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import ImgPreview from 'detail-page-create'
+import DetailPageCreate from 'detail-page-create'
 
 class ExamplePage extends Component {
   constructor(props) {
@@ -10,7 +10,9 @@ class ExamplePage extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <DetailPageCreate dataStrcut={[]} data={{}} />
+      </div>
     )
   }
 }
