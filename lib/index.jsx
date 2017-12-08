@@ -26,16 +26,16 @@ export default (props) => {
         contentCol = 6
       } = (d.layout || {})
 
-      return (<div key={d.id}>
+      return (<div key={d.name + i}>
         {
           d.label
-          ? <div className={`.col-${labelCol}`}>{d.label}</div>
+          ? <div className={`col col-${labelCol}`}>{d.label}</div>
           : null
         }
         {
           d.render
           ? d.render(data[d.id], data, i)
-          : <div className={`.col-${contentCol}`}>{data[d.id]}</div>
+          : <div className={`col col-${contentCol}`}>{data[d.name]}</div>
         }
       </div>)
     })}

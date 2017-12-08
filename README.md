@@ -1,7 +1,12 @@
-# DETAIL-PAGE-CREATE
+# detail-page-create
 
-## Getting Started
+## 介绍
+通过配置快速生成详情页
+## 安装
 
-## Usage
-
-## Options
+## 使用
+```
+```
+## props
+```
+```
