@@ -1,6 +1,6 @@
 
 import React from 'react'
-import './index.css';
+import '../assets/index.css';
 
 /**
  * Return react elements.
