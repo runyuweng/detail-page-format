@@ -15,7 +15,7 @@ export default (props) => {
     console.error('Array is needed');
     return
   }
-  return (<div className="detail-page-format">
+  return (<div className="detail-page-format" style={props.style}>
     {dataStrcut.map((d, i) => {
       if (d.disabled) {
         return
@@ -29,7 +29,7 @@ export default (props) => {
       return (<div key={d.name + i}>
         {
           d.label
-          ? <div className={`col col-${labelCol}`}>{d.label}</div>
+          ? <div className={`col col-${labelCol}`} style={{textAlign: 'right'}}>{d.label}</div>
           : null
         }
         {

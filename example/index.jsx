@@ -16,11 +16,11 @@ class ExamplePage extends Component {
     this.dataStrcut = [
       {
         name: 'name',
-        label: '姓名',
+        label: '姓名:',
       },
       {
         name: 'id',
-        label: 'ID',
+        label: 'ID:',
         layout: {
           labelCol: 2,
           contentCol: 2,
@@ -28,11 +28,11 @@ class ExamplePage extends Component {
       },
       {
         name: 'tel',
-        label: '电话',
+        label: '电话:',
       },
       {
         name: 'mail',
-        label: '邮箱',
+        label: '邮箱:',
       },
     ]
   }
@@ -40,7 +40,11 @@ class ExamplePage extends Component {
   render() {
     return (
       <div>
-        <DetailPageCreate dataStrcut={this.dataStrcut} data={this.state.data} />
+        <DetailPageCreate
+          style={{margin: '20px'}}
+          dataStrcut={this.dataStrcut}
+          data={this.state.data}
+        />
       </div>
     )
   }
