@@ -26,7 +26,7 @@ export default (props) => {
         contentCol = 6
       } = (d.layout || {})
 
-      return (<div key={d.name + i}>
+      return (<div key={d.name + i} className="row">
         {
           d.label
           ? <div className={`col col-${labelCol}`} style={{textAlign: 'right'}}>{d.label}</div>

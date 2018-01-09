@@ -1,6 +1,6 @@
 {
   "name": "detail-page-create",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A component for react to help quickly generate details page",
   "main": "dist/index.js",
   "scripts": {
