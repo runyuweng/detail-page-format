@@ -10,7 +10,7 @@ import '../assets/index.css';
  */
 
 export default (props) => {
-  const {dataStrcut, data} = props;
+  const {dataStrcut, data, rowStyle={}} = props;
   if (Object.prototype.toString.call(dataStrcut) !== '[object Array]') {
     console.error('Array is needed');
     return
@@ -26,7 +26,7 @@ export default (props) => {
         contentCol = 6
       } = (d.layout || {})
 
-      return (<div key={d.name + i} className="row">
+      return (<div key={d.name + i} className="row" style={rowStyle}>
         {
           d.label
           ? <div className={`col col-${labelCol}`} style={{textAlign: 'right'}}>{d.label}</div>

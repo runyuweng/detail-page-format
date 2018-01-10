@@ -41,6 +41,7 @@ class ExamplePage extends Component {
     return (
       <div>
         <DetailPageCreate
+          rowStyle={{background: '#ccc'}}
           style={{margin: '20px'}}
           dataStrcut={this.dataStrcut}
           data={this.state.data}
