@@ -29,6 +29,9 @@ class ExamplePage extends Component {
       {
         name: 'tel',
         label: '电话:',
+        render: (d, data) => {
+          return 'xxx'
+        }
       },
       {
         name: 'mail',
