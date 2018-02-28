@@ -15,6 +15,16 @@ export default (props) => {
     console.error('Array is needed');
     return
   }
+  function formatKey(data, key) {
+    if (key.split('.').length > 1) {
+      let result = data;
+      for (let i = 0; i < key.split('.').length; i++) {
+        result = (result || {})[key.split('.')[i]]
+      }
+      return result
+    }
+    return data[key]
+  }
   return (<div className="detail-page-format" style={props.style}>
     {dataStrcut.map((d, i) => {
       if (d.disabled) {

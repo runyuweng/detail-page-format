@@ -7,7 +7,9 @@ class ExamplePage extends Component {
     super(props)
     this.state = {
       data: {
-        name: 'wry',
+        user: {
+          name: 'wry',
+        },
         id: '12asdvhbadsjvbhjkasdvkjahsdvkajsdkjsda3',
         tel: '111111',
         mail: '11@11.com',
@@ -15,7 +17,7 @@ class ExamplePage extends Component {
     }
     this.dataStrcut = [
       {
-        name: 'name',
+        name: 'user.name',
         label: '姓名:',
       },
       {
