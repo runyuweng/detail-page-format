@@ -2,6 +2,7 @@
   padding: 0 10px;
   display: inline-block;
   text-overflow: ellipsis;
+  vertical-align: top;
   overflow: hidden;
   box-sizing: border-box;
 }
