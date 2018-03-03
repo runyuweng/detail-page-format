@@ -44,7 +44,7 @@ export default (props) => {
         }
         {
           d.render
-          ? <div className={`col col-${contentCol}`}>{d.render(data[d.id], data, i)}</div>
+          ? <div className={`col col-${contentCol}`}>{d.render(data[d.name], data, i)}</div>
           : <div className={`col col-${contentCol}`}>{data[d.name]}</div>
         }
       </div>)
